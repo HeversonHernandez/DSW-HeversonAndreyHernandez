@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<title>UNAD</title>
+
+<script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.0.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.0.css" media="screen" /> 
+
+
+  <script type="text/javascript"> 
+    $(document).ready(function() {
+      $("a.fancybox").fancybox({
+        'titleShow'     : true,
+        'transitionIn'  : 'elastic',
+        'transitionOut' : 'elastic'
+      });
+    });
+  </script>
+    
+
+<!-- Begin DropDown -->
+      
+<script type="text/javascript">
+$(function(){
+   $("ul.dropdown li").hover(function(){
+        $(this).addClass("hover");
+        $('ul:first',this).css('visibility', 'visible');
+    
+    }, function(){
+   $(this).removeClass("hover");
+   $('ul:first',this).css('visibility', 'hidden');
+});
+$("ul.dropdown li ul li:has(ul)").find("a:first").append(" &raquo; ");
+});
+</script> 
+
+</head>
+
+<body>
+
+<div id="header">
+
+<div id="social">
+  <a href="#"><img src="images/facebook.png" width="26" height="26" alt="facebook" /></a>
+  <a href="#"><img src="images/twitter.png" width="26" height="26" alt="twitter" /></a>
+  <a href="#"><img src="images/linkedin.png" width="26" height="26" alt="linkedin" /></a>
+  <a href="#"><img src="images/email.png" width="26" height="26" alt="email" /></a>
+</div>
+
+</div>
+
+
+
+<ul class="dropdown"><!-- menu -->
+
+<li><a href="planing.html">Inicio</a></li>
+
+<li><a href="gallery.html">Git &amp;GitHub</a>
+<ul class="sub_menu">
+    <li><a href="page.html">Conceptos</a></li>
+    <li><a href="gallery.html">Recursos</a>
+        <ul>
+        <li><a href="gallery.html">Pendiente 1</a></li>
+        <li><a href="gallery.html">Pendiente 2</a></li>
+        </ul>
+    </li>
+    <li><a href="gallery.html">Autoevaluación</a></li>
+</ul>
+</li>
+
+<!-- end submenu -->
+
+<li><a href="autor.html">Autor</a></li>
+
+</ul><!-- close menu -->
+
+<div id="gallery"><!-- gallery -->
+
+	<div>
+    <h2>Git y GitHub</h2>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 80.0000%; padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em;
+    margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+    <iframe style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEMmZucQxA&#x2F;view?embed">
+  </iframe></div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEMmZucQxA&#x2F;view?utm_content=DAEMmZucQxA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Herramientas de control de versiones distribuida</a>
+  </div>
+  <div>
+    <h2>Prezi</h2>
+    <iframe height="400" src="https://prezi.com/view/r07qM3TQhzJ2St65CMLE/embed" width="550">   </iframe>
+  </div>
+                               
+</div><!-- close gallery -->
+
+
+
+<div id="footer">
+<!-- poner autor por aca-->
+</div>
+
+</body>
+</html>

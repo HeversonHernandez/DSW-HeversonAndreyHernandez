@@ -3,12 +3,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" media="all" />
-	<!--[if IE 7]>
-	<link rel="stylesheet" type="text/css" href="style-ie.css" />
-	<![endif]-->
-<title>UNAD | pendiente</title>
+<title>UNAD</title>
 
 <script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.0.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.0.css" media="screen" /> 
+
+
+	<script type="text/javascript"> 
+		$(document).ready(function() {
+			$("a.fancybox").fancybox({
+				'titleShow'     : true,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+		});
+	</script>
+    
 
 <!-- Begin DropDown -->
       
@@ -24,7 +35,7 @@ $(function(){
 });
 $("ul.dropdown li ul li:has(ul)").find("a:first").append(" &raquo; ");
 });
-</script>
+</script> 
 
 </head>
 
@@ -40,6 +51,7 @@ $("ul.dropdown li ul li:has(ul)").find("a:first").append(" &raquo; ");
 </div>
 
 </div>
+
 
 
 <ul class="dropdown"><!-- menu -->
@@ -65,52 +77,85 @@ $("ul.dropdown li ul li:has(ul)").find("a:first").append(" &raquo; ");
 
 </ul><!-- close menu -->
 
-<div id="gallery"><!-- gallery -->
 
-<ul>
-  <li><a href="gallery.html"><img src="images/Est1.jpg" alt="demo" /></a></li>
-  <li><a href="gallery.html"><img src="images/Est2.jpg" alt="demo" /></a></li>
-  <li><a href="gallery.html"><img src="images/Est3.jpg" alt="demo" /></a></li>
-  <li><a href="gallery.html"><img src="images/Est4.jpg" alt="demo" /></a></li>                        
-</ul>
+<div id="content"><!-- content -->
 
-</div><!-- close gallery -->
- 
- 
-<div id="intro">
-<p><span>Objetivo general.</span></p>
-<p>Plantear una herramienta virtual que permita enseñar ciertas caracteristicas de HTML5</p>
-<p><span>Objetivos específicos</span></p>
-<p>&#8226; Consolidar la teoría requerida en la OVI</p>
-<p>&#8226; Desarrollar por medio de un software especializado la posible interfaz de la aplicación a desarrollar</p>
-<p>&#8226; Consolidar por medio de una página HTML los planteaminetos de la aplicación</p>
-<p></p>
-<p></p>
+<h1>¿Que es Git?</h1> 
 
-<div id="box_left">
-<h3>Git</h3>
 <p>Antes de continuar, debemos entender a Git como el núcleo de GitHub. 
 Git es un sistema de control de versiones desarrollado por Linus Torvalds (el creador de Linux). 
 Cuando los desarrolladores crean nuevos proyectos, siempre modifican el código de forma continua.
 Incluso después de que comience el proyecto, aún necesitan actualizar la versión, corregir errores, agregar nuevas funciones, etc.</p>
 <p>El sistema de control de versiones ayuda a registrar los cambios realizados en el código. Además, registra quién realizó los cambios y puede restaurar el código eliminado o modificado. Aparte de ser software libre, no depende de un repositorio central, desde varios dispositivos con permisos se pueden ir alterando y mejorando lo realizado. <br>  
 Gracias a su gran potencia, se crean diversas ramas de un mismo proyecto, ayudando a generrar pruebas o experimentos sin alterar aquellas versiones sin fallas o que se deseen rescatar.</p>
-<a href="page.html"><img src="images/more.png" class="more" width="68" height="24" alt="more" /></a>
-</div>
 
-<div id="box_right">
-<h3> ¿Qué es GitHub y para que se utiliza?</h3>
+<h2>¿Que es GitHub y para que se utiliza?</h2>
+
 <p>GitHub es un sistema de gestión de proyectos y control de versiones de código, así como una plataforma de red social diseñada para desarrolladores. Pero, ¿cuál es el propósito de GitHub? Bueno, en general, te permite colaborar con otras personas de todo el mundo, planificar proyectos y realizar un seguimiento del trabajo.
-    GitHub es también uno de los repositorios en línea de trabajo colaborativo más grandes del mundo.</p>
-<a href="page.html"><img src="images/more.png" class="more" width="68" height="24" alt="more" /></a>
-</div>
+GitHub es también uno de los repositorios en línea de trabajo colaborativo más grandes del mundo.</p>
 
-<div id="box_middle">
-<h3>Tiempo</h3>
-<p>&#8226; Fue creada en 2005 Por Linux Torvalds</p>
-<p>&#8226; Torvalds, el mismo creador de S.O. con licencia libre</p>
-<a href="page.html"><img src="images/more.png" class="more" width="68" height="24" alt="more" /></a>
-</div>
+                      
+</div><!-- end content -->
+
+
+<div id="sidebar"><!-- sidebar -->
+<h3>Twitter</h3>
+
+<p class="sidebar_box" style=" width: 100%; height: auto; max-height: 300px; overflow:scroll;">
+<a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+<h3>Estudiante 1</h3>
+
+    <div class="navcontainer">
+    <ul>
+    <li><a href="#">Git</a></li>
+    <li><a href="#">GitHub</a></li>
+    <li><a href="#">Historia</a></li>
+    <li><a href="#">Pendiente</a></li>
+    </ul>
+    </div>
+
+<h3>Estudiante 2</h3>
+
+    <div class="navcontainer">
+    <ul>
+    <li><a href="#">HTML 5</a></li>
+    <li><a href="#">Etiquetas</a></li>
+    <li><a href="#">Atributos</a></li>
+    <li><a href="#">Valores</a></li>
+    </ul>
+    </div>
+<h3>Estudiante 3</h3>    
+<div class="navcontainer">
+    <ul>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">SECTION</a></li>
+    <li><a href="#">ASIDE</a></li>
+    <li><a href="#">FOOTER</a></li>
+    <li><a href="#">ARTICLE</a></li>
+    </ul>
+    </div>
+<h3>Estudiante 4</h3>    
+<div class="navcontainer">
+    <ul>
+    <li><a href="#">Propiedades básicas de CSS</a></li>
+    <li><a href="#">Display: inline</a></li>
+    <li><a href="#">Display: block</a></li>
+    <li><a href="#">Display: inline-block</a></li>
+    </ul>
+    </div>
+<h3>Estudiante 5</h3>    
+<div class="navcontainer">
+    <ul>
+    <li><a href="#">CSS3</a></li>
+    <li><a href="#">Estilos internos</a></li>
+    <li><a href="#">Estilos externos</a></li>
+    <li><a href="#">Selectores CSS</a></li>
+    </ul>
+    </div>
+
+</div><!-- end sidebar -->
+
 
 <div id="footer">
 
